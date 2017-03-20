@@ -7,7 +7,6 @@ before_install:
   - pip install coveralls
 # Command to run tests
 script: 
-#  - coverage run --source=rpn python3 -m unittest
-  - python3 -m unittest
+  - coverage run -m unittest
 after_success:
   - coveralls
