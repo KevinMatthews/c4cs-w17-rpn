@@ -4,6 +4,9 @@ python:
 before_install:
   - sudo apt-get update
   - sudo apt-get install python3
+  - pip install coveralls
 # Command to run tests
 script: 
-  - python3 -m unittest
+  - coverage run --source=rpn python3 -m unittest
+after_success:
+  - coveralls
