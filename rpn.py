@@ -1,5 +1,5 @@
-import operator
-import readline
+import operator, readline
+from colorama import Fore, Style
 
 OPERATORS = {
         '+': operator.add,
@@ -26,8 +26,8 @@ def calculate(arg):
 
 def main():
     while True:
-        result = calculate(input('rpn calc> '))
-        print("Result:", result)
+        result = calculate(input(Fore.WHITE + 'rpn calc> '))
+        print(Fore.GREEN + "Result:", result)
 
 if __name__ == '__main__':
     main()
