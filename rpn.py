@@ -1,4 +1,5 @@
 import operator
+import readline
 
 OPERATORS = {
         '+': operator.add,
