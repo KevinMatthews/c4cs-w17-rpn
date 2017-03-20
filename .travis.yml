@@ -5,6 +5,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install python3
   - pip install coveralls
+  - pip install colorama
 # Command to run tests
 script: 
   - coverage run -m unittest
